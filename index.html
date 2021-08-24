@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Preview</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="top">
+        <div class="nav-container">
+            <h1>VideoLab</h1>
+            <input type="text" placeholder=" Search" class="search">
+            <button class="btn">Login</button>
+        </div>
+    </div>
+    <div class="flex-container">
+        <div class="col-l">
+
+
+            <video onmouseover="playVid(this)" onmouseout="pauseVid(this)" controls class="mp4">
+                <source src="video.mp4" type="video/mp4">
+            </video>
+
+
+            <div class="video-title">Nature Rain</div>
+            <h5>1.3K views | June 18, 2021</h5>
+            <div class="user">
+                <img src="assets/user.png" alt="avatar" class="avatar-s">
+                <h4 class="user-name">Example User Name</h4>
+            </div>
+        </div>
+    </div>
+    <div class="col-r"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
